@@ -1464,6 +1464,15 @@ namespace CTCT
             return AccountService.GetVerifiedEmailAddress(AccessToken, APIKey);
         }
 
+	    /// <summary>
+	    /// Retrieve account summary information
+	    /// </summary>
+	    /// <returns>Account summary information</returns>
+	    public AccountInfo GetAccountInfo()
+		{
+			return AccountService.GetAccountInfo(AccessToken, APIKey);
+	    }
+
         #endregion Account service
 
 		#region MyLibrary service

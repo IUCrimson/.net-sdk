@@ -170,6 +170,10 @@ namespace CTCT.Util
             /// Contact tracking link.
             /// </summary>
             public const string ContactTrackingLink = "contacts/{0}/tracking/clicks/{1}";
+			/// <summary>
+			/// Account summary information
+			/// </summary>
+			public const string AccountInfo = "account/info";
             /// <summary>
             /// Account verified email addresses link
             /// </summary>

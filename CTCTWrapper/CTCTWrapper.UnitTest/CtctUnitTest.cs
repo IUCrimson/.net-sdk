@@ -73,6 +73,15 @@ namespace CTCTWrapper.UnitTest
         #region Live tests
 
         #region Account API
+        
+        [TestMethod]
+        public void LiveAccountInfoTest()
+        {
+            var cc = new ConstantContact(ApiKey, AccessToken);
+            var ac = cc.GetAccountInfo();
+
+            Assert.IsNotNull(ac);
+        }
 
         [TestMethod]
         public void LiveVerifiedEmailAddressTest()
